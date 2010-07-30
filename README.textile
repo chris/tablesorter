@@ -1,0 +1,19 @@
+h1. jQuery Tablesorter
+
+This is a fork of Christian Bach's jQuery tablesorter plugin, found here: http://tablesorter.com
+
+I've made some modifications and "fixes"...
+
+h2. Modifications
+
+h3. Add implementation of the appendSort option
+
+The existing sortForce option's documentation is not correct in that it claims it adds it as a secondary sort, but in reality it *appends* it, so that that column is always sorted on first.  That doesn't seem intuitive, and isn't what I needed.  The appendSort behavior, as detailed "here":http://davidlynch.org/blog/2008/02/fixing-sortforce-in-jquerys-tablesorter/ is what I needed.
+
+The standard tablesorter 2.0.3 had part of this patch in it, but not the actual implementation of appendSort.
+
+h3. Determination of sort order when clicking columns
+
+One of the behaviors I wanted to "fix"/change, was how the sort order was always just flipped the other direction when changing the sort, regardless of whether the user clicked the same column or a different column.  Thus, I changed it so that when the user clicks on a __different__ column, the sort direction is set to the sortInitialOrder.  The sort order is still reversed when clicking on the same column that is already being sorted on.
+
+
