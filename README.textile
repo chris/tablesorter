@@ -1,6 +1,6 @@
 h1. jQuery Tablesorter
 
-This is a fork of Christian Bach's jQuery tablesorter plugin, found here: http://tablesorter.com
+This is a fork of "Christian Bach's jQuery tablesorter plugin":http://tablesorter.com.
 
 I've made some modifications and "fixes"...
 
