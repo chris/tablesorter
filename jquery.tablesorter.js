@@ -10,10 +10,7 @@
  * http://www.opensource.org/licenses/mit-license.php
  * http://www.gnu.org/licenses/gpl.html
  *
- * Additions/modifications by Chris Bailey:
- * - add implementation of appendSort (from http://davidlynch.org/blog/2008/02/fixing-sortforce-in-jquerys-tablesorter/)
- * - change determination of sort order when changing sort: now will use the initial sort order when changing columns,
- *   or flip the sort order when clicking the same column (vs. always flipping the order).
+ * Additions/modifications by Chris Bailey, see: http://github.com/chris/tablesorter
  */
 /**
  *
